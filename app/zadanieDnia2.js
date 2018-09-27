@@ -1,11 +1,11 @@
 const http = require('http');
 
 const srv = http.createServer((req, res) => {
-		const text = req.headers['user-agent'];
-		res.setHeader("Content-Type", "text/html; charset=utf-8");
-		res.end(text);
+  const text = req.headers['user-agent'];
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.end(text);
 })
 
 srv.listen(3000, () => {
-		console.log('Serwer uruchomiony na porcie 3000');
+  console.log('Serwer uruchomiony na porcie 3000');
 })
